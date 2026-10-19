@@ -7,11 +7,24 @@ This project explores the factors associated with students' final grades using t
 
 ## Dataset
 
-- **Dataset:** Student Performance (Portuguese language course) https://archive.ics.uci.edu/dataset/320/student+performance
+- **Dataset:** Student Performance — Portuguese language course
+- **Source:** [UCI Machine Learning Repository](https://archive.ics.uci.edu/dataset/320/student+performance)
 - **Number of students:** 649
 - **Schools:** Two Portuguese secondary schools
-- **Data source:** Student Performance dataset
 - **Main file:** `student-por.csv`
+- **Target variable:** `G3` — final grade
+- **Grade scale:** 0–20
+
+
+## Research Questions
+
+This project investigates the following questions:
+
+1. How strongly are previous grades associated with final grades?
+2. How does weekly study time relate to academic performance?
+3. How are previous class failures associated with final grades?
+4. How do selected family and social background factors relate to academic outcomes?
+5. What are the limitations of using these factors to understand or evaluate students?
 
 ## Objectives
 
@@ -56,6 +69,14 @@ This pattern suggests an association between reported study time and academic pe
 Students with no previous class failures have an average final grade of approximately **12.51**.
 
 Students with previous failures generally show lower average final grades, with the analyzed groups averaging approximately **8.07–8.81**.
+
+### 4. Background Factors Have Weaker Associations Than Previous Grades
+
+The broader analysis also considers selected factors such as parents' education, school, home address, sex, absences, and family educational support.
+
+These variables show weaker associations with final grades than previous academic grades in the analyzed data.
+
+Such patterns may help researchers explore educational inequalities, but background characteristics should not be treated as direct measures of individual ability, effort, or potential.
 
 ## Visualizations
 
