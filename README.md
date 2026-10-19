@@ -47,6 +47,8 @@ The main objectives of this project are to:
 
 ## Key Findings
 
+![Poster](./poster.png)
+
 ### 1. Previous Grades
 
 Previous grades are strongly associated with final grades.
