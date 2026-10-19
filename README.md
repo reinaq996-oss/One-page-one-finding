@@ -45,9 +45,10 @@ The main objectives of this project are to:
 - Matplotlib
 - Seaborn
 
-## Key Findings
-
+## Project Poster
 ![Poster](./poster.png)
+
+## Key Findings
 
 ### 1. Previous Grades
 
