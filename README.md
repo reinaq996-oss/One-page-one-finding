@@ -7,7 +7,7 @@ This project explores the factors associated with students' final grades using t
 
 ## Dataset
 
-- **Dataset:** Student Performance (Portuguese language course)
+- **Dataset:** Student Performance (Portuguese language course) https://archive.ics.uci.edu/dataset/320/student+performance
 - **Number of students:** 649
 - **Schools:** Two Portuguese secondary schools
 - **Data source:** Student Performance dataset
