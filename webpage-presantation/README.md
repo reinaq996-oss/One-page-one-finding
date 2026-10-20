@@ -1,0 +1,131 @@
+# One-page-one-finding
+
+## Website
+
+A single-page story site for the project lives at the root of this repo (`index.html`, `assets/`, `poster.png`).
+It is plain HTML, CSS and JavaScript, so GitHub Pages serves it directly with no build step.
+
+**Publish it:** Settings, Pages, Source: *Deploy from a branch*, Branch: `main` / `(root)`. The site appears at `https://reinaq996-oss.github.io/One-page-one-finding/`.
+
+**Images:** `assets/classroom.jpg` and `assets/hallway.jpg` are used in the question panel and the quote band. The page background is a CSS gradient; to use a photo instead, add `--backdrop-image: url(assets/backdrop.jpg);` to `:root` in `assets/site.css`.
+
+**Change copy or data:** edit `tools/build.ts`, then run `npx tsx tools/build.ts` to regenerate `index.html`. Every number on the page is computed from `student-por.csv` and checked against the notebook, so the build stops if they drift apart.
+
+# Student Performance Analysis
+
+## Project Overview
+
+This project explores the factors associated with students' final grades using the Student Performance dataset. The analysis focuses on previous grades, weekly study time, and the number of past class failures to understand how they relate to academic performance.
+
+## Dataset
+
+- **Dataset:** Student Performance — Portuguese language course
+- **Source:** [UCI Machine Learning Repository](https://archive.ics.uci.edu/dataset/320/student+performance)
+- **Number of students:** 649
+- **Schools:** Two Portuguese secondary schools
+- **Main file:** `student-por.csv`
+- **Target variable:** `G3` — final grade
+- **Grade scale:** 0–20
+
+
+## Research Questions
+
+This project investigates the following questions:
+
+1. How strongly are previous grades associated with final grades?
+2. How does weekly study time relate to academic performance?
+3. How are previous class failures associated with final grades?
+4. How do selected family and social background factors relate to academic outcomes?
+5. What are the limitations of using these factors to understand or evaluate students?
+
+## Objectives
+
+The main objectives of this project are to:
+
+- Investigate the relationship between previous grades and final grades.
+- Analyze the association between weekly study time and academic performance.
+- Examine how previous class failures relate to final grades.
+- Communicate the findings through clear and informative visualizations.
+- Identify limitations in the data and avoid confusing correlation with causation.
+
+## Tools and Technologies
+
+- Python
+- Jupyter Notebook
+- Pandas
+- NumPy
+- Matplotlib
+- Seaborn
+
+## Project Poster
+![Poster](./poster.png)
+
+## Key Findings
+
+### 1. Previous Grades
+
+Previous grades are strongly associated with final grades.
+
+- The correlation between G1 (first-period grade) and G3 (final grade) is approximately **0.83**.
+- The correlation between G2 (second-period grade) and G3 is approximately **0.92**.
+
+G2 has a stronger correlation with the final grade than G1.
+
+### 2. Weekly Study Time
+
+The analysis compares average final grades across different reported weekly study-time categories.
+
+Students reporting 5–10 hours of weekly study time have an average final grade of approximately **13.23** out of 20.
+
+This pattern suggests an association between reported study time and academic performance, but it does not establish a causal relationship.
+
+### 3. Previous Class Failures
+
+Students with no previous class failures have an average final grade of approximately **12.51**.
+
+Students with previous failures generally show lower average final grades, with the analyzed groups averaging approximately **8.07–8.81**.
+
+### 4. Background Factors Have Weaker Associations Than Previous Grades
+
+The broader analysis also considers selected factors such as parents' education, school, home address, sex, absences, and family educational support.
+
+These variables show weaker associations with final grades than previous academic grades in the analyzed data.
+
+Such patterns may help researchers explore educational inequalities, but background characteristics should not be treated as direct measures of individual ability, effort, or potential.
+
+## Visualizations
+
+The notebook uses visualizations to communicate the results, including:
+
+- Correlation comparisons between previous and final grades.
+- Average final grades across weekly study-time categories.
+- Average final grades grouped by the number of previous class failures.
+
+## Limitations
+
+- Correlation does not imply causation.
+- The dataset cannot explain every student's academic outcome.
+- Some observations require further investigation. For example, 15 students have a final grade of zero despite having no recorded absences.
+- Group averages do not describe every individual student's performance.
+
+## Conclusion
+
+The analysis indicates that previous grades are the strongest of the examined indicators associated with final grades. Weekly study time and previous class failures also show meaningful patterns.
+
+These findings can help identify factors associated with academic performance, but they should not be used to define a student's potential or predict an individual's future with certainty.
+
+## Project Structure
+
+```text
+Student-Performance/
+├── Student_Performance.ipynb
+├── student-por.csv
+└── README.md
+```
+
+## Authors
+
+- Gjergj Garuli
+- Sejbi Koromani
+- Reina Qose
+
